@@ -1,9 +1,49 @@
-#Network Report
-  
-The diagram represents a segmented network design connecting Library and Multimedia Facilities across two cities (City 1 as the main site and City 2 as the branch), with a focus on City 2.
-It showcases a VLAN-based architecture where access switches (2960) are used in each area and uplinked to a multilayer switch (3650) for inter-VLAN routing.
+Network Report
 
-A WAN link (10.10.10.0/30) connects the core routers of both cities, with RIPv2 enabling dynamic routing between internal networks static routes providing access to external networks. 
-The design includes DHCP services configured on the core router, assigning IP addresses per VLAN, and security measures include shutting down of unused ports and implementing VLAN trunking on uplink ports. 
-End devices, including PCs, cameras, scanners, and projectors, receive IP addresses dynamically and demonstrate successful site-to-site communication.
-NOTE: Devices such as scanner, presentation board, CCTV cameras, network projector and copiers, are physically represented by PCs (for CCTV cameras, presentation board, network projector) and Printers (for Scanners and Copiers) in the diagram, but they are correctly labelled with their actual names.
+<img width="1458" height="647" alt="image" src="https://github.com/user-attachments/assets/4ff7aebd-c9a5-4d1c-bc36-347eec6ccc0f" />
+
+This repository showcases a segmented network design connecting Library and Multimedia Facilities across two cities:
+
+City 1: Main site
+
+City 2: Branch site
+
+Network Design Highlights
+
+VLAN-Based Architecture:
+
+Access switches (Cisco 2960) deployed in each area
+
+Uplinked to multilayer switches (Cisco 3650) for inter-VLAN routing
+
+WAN Connectivity:
+
+WAN link (10.10.10.0/30) connecting core routers of both cities
+
+Dynamic routing via RIPv2 for internal networks
+
+Static routes for external network access
+
+DHCP Services:
+
+Configured on the core router
+
+Assigns IP addresses per VLAN
+
+Security Measures:
+
+Unused ports shut down
+
+VLAN trunking implemented on uplinks
+
+End Devices:
+
+PCs, CCTV cameras, scanners, projectors, and copiers
+
+Devices represented physically as PCs/Printers in the diagram but correctly labelled
+
+Communication
+
+All end devices receive IP addresses dynamically
+
+Successful site-to-site communication demonstrated
