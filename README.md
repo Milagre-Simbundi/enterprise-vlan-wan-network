@@ -1,5 +1,6 @@
 # Enterprise VLAN WAN Netwok
 <img width="1458" height="647" alt="image" src="https://github.com/user-attachments/assets/4ff7aebd-c9a5-4d1c-bc36-347eec6ccc0f" />
+
 ## Overview
 
 This project demonstrates the design and implementation of a segmented enterprise network connecting Library and Multimedia facilities across two geographically separated sites using Cisco Packet Tracer.
