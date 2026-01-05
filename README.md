@@ -1,49 +1,98 @@
-Network Report
-
+# Enterprise VLAN WAN Netwok
 <img width="1458" height="647" alt="image" src="https://github.com/user-attachments/assets/4ff7aebd-c9a5-4d1c-bc36-347eec6ccc0f" />
+## Overview
 
-This repository showcases a segmented network design connecting Library and Multimedia Facilities across two cities:
+This project demonstrates the design and implementation of a segmented enterprise network connecting Library and Multimedia facilities across two geographically separated sites using Cisco Packet Tracer.
 
-City 1: Main site
+The network is built following enterprise networking principles, including VLAN segmentation, inter-VLAN routing, WAN connectivity, dynamic routing, DHCP services, and basic security hardening.
 
-City 2: Branch site
+## Network Topology Overview
 
-Network Design Highlights
+City 1 – Main Site
 
-VLAN-Based Architecture:
+City 2 – Branch Site
 
-Access switches (Cisco 2960) deployed in each area
+Each site supports multiple departments and shared resources, ensuring scalability, security, and efficient traffic management.
 
-Uplinked to multilayer switches (Cisco 3650) for inter-VLAN routing
+## Network Design Highlights
+## VLAN-Based Architecture
 
-WAN Connectivity:
+Multiple VLANs created to logically separate departments and services
 
-WAN link (10.10.10.0/30) connecting core routers of both cities
+Cisco 2960 access switches deployed for end-device connectivity
 
-Dynamic routing via RIPv2 for internal networks
+Cisco 3650 multilayer switches used for inter-VLAN routing
 
-Static routes for external network access
+## WAN Connectivity
 
-DHCP Services:
+Point-to-point WAN link: 10.10.10.0/30
 
-Configured on the core router
+Connects core routers between City 1 and City 2
 
-Assigns IP addresses per VLAN
+RIPv2 configured for internal dynamic routing
 
-Security Measures:
+Static routes implemented for external network access
 
-Unused ports shut down
+## DHCP Services
 
-VLAN trunking implemented on uplinks
+Centralized DHCP service configured on the core router
 
-End Devices:
+Automatic IP address assignment per VLAN
 
-PCs, CCTV cameras, scanners, projectors, and copiers
+Simplifies host configuration and improves manageability
 
-Devices represented physically as PCs/Printers in the diagram but correctly labelled
+## Security Measures
 
-Communication
+All unused switch ports administratively shut down
 
-All end devices receive IP addresses dynamically
+VLAN trunking configured only on authorized uplink ports
 
-Successful site-to-site communication demonstrated
+Network segmentation reduces broadcast traffic and improves security
+
+## End Devices
+
+PCs
+
+CCTV Cameras
+
+Scanners
+
+Projectors
+
+Copiers
+
+Devices are represented physically as PCs or printers in Packet Tracer but are logically labelled according to their real-world function.
+
+## Network Communication
+
+All end devices successfully obtain IP addresses via DHCP
+
+Full site-to-site communication verified across the WAN
+
+Inter-VLAN and inter-site routing functioning correctly
+
+## Testing & Validation
+
+Verified DHCP address allocation per VLAN
+
+Confirmed inter-VLAN routing on multilayer switches
+
+Tested WAN connectivity between sites
+
+Successful end-to-end communication confirmed using ICMP (ping)
+
+## Technologies Used
+
+Cisco Packet Tracer
+
+VLANs & Trunking (802.1Q)
+
+Inter-VLAN Routing
+
+RIPv2
+
+Static Routing
+
+DHCP
+
+Basic Switch Security
